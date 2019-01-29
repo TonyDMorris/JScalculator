@@ -1,0 +1,72 @@
+#container{
+    display:grid;
+    grid-template-columns: 30% 40% 30%;
+    
+    grid-template-areas: ". calculator .";
+    text-align: center;
+}
+#calculator{
+    display: grid;
+    grid-area: calculator;
+    /* grid-template-columns: 20% 20% 20% 20% 20%; */
+    /* grid-template-rows: 40% 15% 15% 15% 15%; */
+    /* grid-template-areas:   */
+    /* "display" */
+    /* "one two three plus ." */
+    /* "four five six minus ." */
+    /* "seven eight nine divide ." */
+    /* "reset nought multi equals"; */
+
+}
+#display{
+    grid-area: display;
+}
+
+#one{
+    grid-area: one;
+}
+#two{
+    grid-area: two;
+}
+#three{
+    grid-area: three;
+}
+#four{
+    grid-area: four;
+}
+#five{
+    grid-area: five;
+}
+#six{
+    grid-area: six;
+}
+#seven{
+    grid-area: seven;
+}
+#eigth{
+    grid-area: eight;
+}
+#nine{
+    grid-area: nine;
+}
+#nought{
+    grid-area: nought;
+}
+#plus{
+    grid-area: plus;
+}
+#minus{
+    grid-area: minus;
+}
+#divide{
+    grid-area: divide;
+}
+#multi{
+    grid-area: multi;
+}
+#equals{
+    grid-area: equals;
+}
+#reset{
+    grid-area: reset;
+}
