@@ -1,6 +1,4 @@
-#container{
-    width:50vw;
-    heigth:50vh;
+
     
 }
 #calculator{
@@ -14,10 +12,8 @@
     "one two three minus plus"
     "nought dec equals reset";
 
-}
-#display{
-    grid-area:display;
-}
+
+    
 
 #one{
     grid-area:one;
