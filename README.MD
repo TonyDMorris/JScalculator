@@ -1,1 +1,1 @@
-first attempt at a js calculator using raw gas html and javascript, without a tutorial.
+first attempt at a js calculator using raw css, html and javascript, without a tutorial.
