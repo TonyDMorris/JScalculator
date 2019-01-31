@@ -3,6 +3,7 @@
 let inputValueOne = [];
 let inputValueTwo = [];
 let signValue;
+document.getElementById("display").innerText = "0";
 
 //function for handling the addition of new digits to the array and displaying them on screen
 function addDigits(digit) {
@@ -21,12 +22,13 @@ function signHandler(sign) {
     if (!signValue) {
         //attributes the apropriate sign to the variable
         signValue = sign;
+        
         //transfer the first value into the second variable so that we can reuse the same function to build the second number
         inputValueTwo = inputValueOne;
         //reset the first varible to its initial state
         inputValueOne = [];
         //update the screen
-        document.getElementById("display").innerText = inputValueOne.join("");
+        document.getElementById("display").innerText = "0";
     }
     //if the user clicks multiple diffrent signs this will simply reasign signValue to the most recent clicked
     else {
@@ -64,6 +66,6 @@ function reset(){
     signValue = undefined;
     inputValueOne = [];
     inputValueTwo = [];
-    document.getElementById("display").innerText = null;
+    document.getElementById("display").innerText = "0";
 
 }
