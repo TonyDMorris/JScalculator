@@ -24,15 +24,17 @@
            <button class="digit" id="eight" onclick="addDigits(8)">8</button>
            <button class="digit" id="nine" onclick="addDigits(9)">9</button>
            <button class="digit" id="nought" onclick="addDigits(0)">0</button>
-           <button class="digit" id="dec" onclick="addDigits('.')">.</button>
+            <!-- need to either add a new function for handling decimals or incorporate some logic into addDigits() -->
+           <button class="digit" id="dec" onclick="addDecimal()">.</button>
            <!-- each sign is passed to the signHandler function as a string -->
            <button class="" id="plus" onclick="signHandler('+')">+</button>
            <button class="" id="minus" onclick="signHandler('-')">-</button>
            <button class="" id="divide" onclick="signHandler('/')">/</button>
            <button class="" id="multi" onclick="signHandler('x')">*</button>
-
+            <!-- performs final calculation and pushes it to display -->
            <button class="" id="equals" onclick="equals()">=</button>
-           <button class="" id="reset">C</button>
+            <!-- special case function for resetting all values -->
+           <button class="" id="reset" onclick="reset()">C</button>
         </div>
     </div>
     

@@ -5,51 +5,65 @@ let inputValueTwo = [];
 let signValue;
 
 //function for handling the addition of new digits to the array and displaying them on screen
-function addDigits(digit){
-inputValueOne.push(digit)
-document.getElementById("display").innerText = inputValueOne.join("");
-}
-
-function signHandler(sign){
-    //checks if a sign is already in place as to avoid nullifying the inputValueOne
-    if(!signValue){
-        //attributes the apropriate sign to the variable
-    signValue = sign;
-    //transfer the first value into the second variable so that we can reuse the same function to build the second number
-    inputValueTwo = inputValueOne;
-    //reset the first varible to its initial state
-    inputValueOne = [];
-    //update the screen
+function addDigits(digit) {
+    inputValueOne.push(digit)
     document.getElementById("display").innerText = inputValueOne.join("");
+}
+//special case function for adding decimals to prevent multiple decimals from being pushed
+function addDecimal() {
+    if(!inputValueOne.join("").match(/\./g)){
+    inputValueOne.push(".")
+    document.getElementById("display").innerText = inputValueOne.join("");
+}}
+
+function signHandler(sign) {
+    //checks if a sign is already in place as to avoid nullifying the inputValueOne
+    if (!signValue) {
+        //attributes the apropriate sign to the variable
+        signValue = sign;
+        //transfer the first value into the second variable so that we can reuse the same function to build the second number
+        inputValueTwo = inputValueOne;
+        //reset the first varible to its initial state
+        inputValueOne = [];
+        //update the screen
+        document.getElementById("display").innerText = inputValueOne.join("");
     }
     //if the user clicks multiple diffrent signs this will simply reasign signValue to the most recent clicked
-    else{
-        signValue = sign;  
+    else {
+        signValue = sign;
     }
 }
 
-function equals(){
+function equals() {
 
     let trueValueOne = parseFloat(inputValueTwo.join(""))
     let trueValueTwo = parseFloat(inputValueOne.join(""))
 
-    if(signValue == "+"){
-        document.getElementById("display").innerText  = trueValueOne + trueValueTwo
+    if (signValue == "+") {
+        document.getElementById("display").innerText = trueValueOne + trueValueTwo
     }
-    if(signValue == "-"){
-        document.getElementById("display").innerText  = trueValueOne - trueValueTwo
+    if (signValue == "-") {
+        document.getElementById("display").innerText = trueValueOne - trueValueTwo
     }
-    if(signValue == "x"){
-        document.getElementById("display").innerText  = trueValueOne * trueValueTwo
+    if (signValue == "x") {
+        document.getElementById("display").innerText = trueValueOne * trueValueTwo
     }
-    if(signValue == "/"){
-        document.getElementById("display").innerText  = trueValueOne / trueValueTwo
+    if (signValue == "/") {
+        document.getElementById("display").innerText = trueValueOne / trueValueTwo
     }
 
-inputValueOne = [];
-inputValueTwo = [];
-signValue = undefined;
+    inputValueOne = [];
+    inputValueTwo = [];
+    signValue = undefined;
 
-    
-    
+
+
+}
+
+function reset(){
+    signValue = undefined;
+    inputValueOne = [];
+    inputValueTwo = [];
+    document.getElementById("display").innerText = null;
+
 }
