@@ -27,14 +27,14 @@
             <!-- need to either add a new function for handling decimals or incorporate some logic into addDigits() -->
            <button class="digit" id="dec" onclick="addDecimal()">.</button>
            <!-- each sign is passed to the signHandler function as a string -->
-           <button class="" id="plus" onclick="signHandler('+')">+</button>
-           <button class="" id="minus" onclick="signHandler('-')">-</button>
-           <button class="" id="divide" onclick="signHandler('/')">/</button>
-           <button class="" id="multi" onclick="signHandler('x')">*</button>
+           <button class="digit" id="plus" onclick="signHandler('+')">+</button>
+           <button class="digit" id="minus" onclick="signHandler('-')">-</button>
+           <button class="digit" id="divide" onclick="signHandler('/')">/</button>
+           <button class="digit" id="multi" onclick="signHandler('x')">X</button>
             <!-- performs final calculation and pushes it to display -->
-           <button class="" id="equals" onclick="equals()">=</button>
+           <button class="digit" id="equals" onclick="equals()">=</button>
             <!-- special case function for resetting all values -->
-           <button class="" id="reset" onclick="reset()">C</button>
+           <button class="digit" id="reset" onclick="reset()">C</button>
         </div>
     </div>
     
