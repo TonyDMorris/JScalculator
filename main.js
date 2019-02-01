@@ -12,10 +12,11 @@ function addDigits(digit) {
 }
 //special case function for adding decimals to prevent multiple decimals from being pushed
 function addDecimal() {
-    if(!inputValueOne.join("").match(/\./g)){
-    inputValueOne.push(".")
-    document.getElementById("display").innerText = inputValueOne.join("");
-}}
+    if (!inputValueOne.join("").match(/\./g)) {
+        inputValueOne.push(".")
+        document.getElementById("display").innerText = inputValueOne.join("");
+    }
+}
 
 function signHandler(sign) {
     //checks if a sign is already in place as to avoid nullifying the inputValueOne
@@ -55,7 +56,7 @@ function equals() {
         document.getElementById("display").innerText = trueValueOne / trueValueTwo
     }
 
-//this allows user to carry out repeat operations on previously calculated numbers
+    //this allows user to carry out repeat operations on previously calculated numbers
     inputValueOne = document.getElementById("display").innerText.split("");
     //reset the values and the inner text of the sign div
     inputValueTwo = [];
@@ -66,7 +67,7 @@ function equals() {
 
 }
 //brings the script back to its initial starting state
-function reset(){
+function reset() {
     signValue = null;
     document.getElementById("sign").innerText = signValue
     inputValueOne = [];
