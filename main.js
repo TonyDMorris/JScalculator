@@ -22,7 +22,7 @@ function signHandler(sign) {
     if (!signValue) {
         //attributes the apropriate sign to the variable
         signValue = sign;
-        
+        document.getElementById("sign").innerText = signValue
         //transfer the first value into the second variable so that we can reuse the same function to build the second number
         inputValueTwo = inputValueOne;
         //reset the first varible to its initial state
@@ -33,6 +33,7 @@ function signHandler(sign) {
     //if the user clicks multiple diffrent signs this will simply reasign signValue to the most recent clicked
     else {
         signValue = sign;
+        document.getElementById("sign").innerText = signValue
     }
 }
 
@@ -54,16 +55,19 @@ function equals() {
         document.getElementById("display").innerText = trueValueOne / trueValueTwo
     }
 
-    inputValueOne = [];
+//this allows user to carry out repeat operations on previously calculated numbers
+    inputValueOne = document.getElementById("display").innerText.split("");
     inputValueTwo = [];
-    signValue = undefined;
+    signValue = null;
+    document.getElementById("sign").innerText = signValue
 
 
 
 }
 
 function reset(){
-    signValue = undefined;
+    signValue = null;
+    document.getElementById("sign").innerText = signValue
     inputValueOne = [];
     inputValueTwo = [];
     document.getElementById("display").innerText = "0";
