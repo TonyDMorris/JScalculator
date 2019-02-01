@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,37 +9,39 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 </head>
+
 <body>
     <div id="container">
-            
+
         <div id="calculator">
             <div id="display"></div>
             <div id="sign"></div>
             <!-- each button calls a function which updates the display or performs the math -->
-           <button class="digit" id="one" onclick="addDigits(1)">1</button>
-           <button class="digit" id="two" onclick="addDigits(2)">2</button>
-           <button class="digit" id="three" onclick="addDigits(3)">3</button>
-           <button class="digit" id="four" onclick="addDigits(4)">4</button>
-           <button class="digit" id="five" onclick="addDigits(5)">5</button>
-           <button class="digit" id="six" onclick="addDigits(6)">6</button>
-           <button class="digit" id="seven" onclick="addDigits(7)">7</button>
-           <button class="digit" id="eight" onclick="addDigits(8)">8</button>
-           <button class="digit" id="nine" onclick="addDigits(9)">9</button>
-           <button class="digit" id="nought" onclick="addDigits(0)">0</button>
+            <button class="digit" id="one" onclick="addDigits(1)">1</button>
+            <button class="digit" id="two" onclick="addDigits(2)">2</button>
+            <button class="digit" id="three" onclick="addDigits(3)">3</button>
+            <button class="digit" id="four" onclick="addDigits(4)">4</button>
+            <button class="digit" id="five" onclick="addDigits(5)">5</button>
+            <button class="digit" id="six" onclick="addDigits(6)">6</button>
+            <button class="digit" id="seven" onclick="addDigits(7)">7</button>
+            <button class="digit" id="eight" onclick="addDigits(8)">8</button>
+            <button class="digit" id="nine" onclick="addDigits(9)">9</button>
+            <button class="digit" id="nought" onclick="addDigits(0)">0</button>
             <!-- need to either add a new function for handling decimals or incorporate some logic into addDigits() -->
-           <button class="digit" id="dec" onclick="addDecimal()">.</button>
-           <!-- each sign is passed to the signHandler function as a string -->
-           <button class="digit" id="plus" onclick="signHandler('+')">+</button>
-           <button class="digit" id="minus" onclick="signHandler('-')">-</button>
-           <button class="digit" id="divide" onclick="signHandler('/')">/</button>
-           <button class="digit" id="multi" onclick="signHandler('x')">X</button>
+            <button class="digit" id="dec" onclick="addDecimal()">.</button>
+            <!-- each sign is passed to the signHandler function as a string -->
+            <button class="digit" id="plus" onclick="signHandler('+')">+</button>
+            <button class="digit" id="minus" onclick="signHandler('-')">-</button>
+            <button class="digit" id="divide" onclick="signHandler('/')">/</button>
+            <button class="digit" id="multi" onclick="signHandler('x')">X</button>
             <!-- performs final calculation and pushes it to display -->
-           <button class="digit" id="equals" onclick="equals()">=</button>
+            <button class="digit" id="equals" onclick="equals()">=</button>
             <!-- special case function for resetting all values -->
-           <button class="digit" id="reset" onclick="reset()">C</button>
+            <button class="digit" id="reset" onclick="reset()">C</button>
         </div>
     </div>
-    
+
 </body>
 <script src="./main.js"></script>
+
 </html>

@@ -1,117 +1,136 @@
-#container{
-    
-    width:100vw;
-    height:100vh;
+#container {
+
+    width: 100vw;
+    height: 100vh;
     max-width: 100%;
     max-height: 100%;
 }
-    
 
-#calculator{
+
+#calculator {
     /* prescence plus layout */
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     display: grid;
-    grid-template-columns:auto auto auto auto auto;
-    grid-template-rows:13vh auto auto auto auto;
-    grid-template-areas:"display display display display sign"
-    "seven eight nine divide ."
-    "four five six multi ."
-    "one two three minus equals"
-    "nought dec reset plus equals";
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 13vh auto auto auto auto;
+    grid-template-areas: "display display display display sign"
+        "seven eight nine divide ."
+        "four five six multi ."
+        "one two three minus equals"
+        "nought dec reset plus equals";
     grid-row-gap: 2%;
     grid-column-gap: 1%;
     /* styling */
-    border:solid 2px black;
+    border: solid 2px black;
     padding: 3%;
     background-image: linear-gradient(#f0eae0 0%, #ccbfa2 100%);
     border-radius: 5px;
-    
+
 
 }
-    
-#display{
+
+#display {
     grid-area: display;
     font-size: 10vh;
     text-align: right;
-    padding:10px;
-    background-image: linear-gradient(#4f8f05 0%, #395c0c 100%);            
+    padding: 10px;
+    background-image: linear-gradient(#4f8f05 0%, #395c0c 100%);
     border: solid 2px #9b4ea1b3;
     border-radius: 10px;
     font-family: 'Orbitron', sans-serif;
 
-    
+
 }
-#sign{
+
+#sign {
     grid-area: sign;
-   
-    
+
+
     text-align: center;
     font-size: 10vh;
 }
-#one{
-    grid-area:one;
+
+#one {
+    grid-area: one;
 }
-#two{
-    grid-area:two;
+
+#two {
+    grid-area: two;
 }
-#three{
-    grid-area:three;
+
+#three {
+    grid-area: three;
 }
-#four{
-    grid-area:four;
+
+#four {
+    grid-area: four;
 }
-#five{
-    grid-area:five;
+
+#five {
+    grid-area: five;
 }
-#six{
-    grid-area:six;
+
+#six {
+    grid-area: six;
 }
-#seven{
-    grid-area:seven;
+
+#seven {
+    grid-area: seven;
 }
-#eight{
-    grid-area:eight;
+
+#eight {
+    grid-area: eight;
 }
-#nine{
-    grid-area:nine;
+
+#nine {
+    grid-area: nine;
 }
-#nought{
-    grid-area:nought;
+
+#nought {
+    grid-area: nought;
 }
-#plus{
-    grid-area:plus;
+
+#plus {
+    grid-area: plus;
 }
-#minus{
-    grid-area:minus;
+
+#minus {
+    grid-area: minus;
 }
-#divide{
+
+#divide {
     grid-area: divide;
 }
-#multi{
+
+#multi {
     grid-area: multi;
 }
-#equals{
+
+#equals {
     grid-area: equals;
     background-image: linear-gradient(#13b913 0%, #11ca11 100%);
 }
-#reset{
+
+#reset {
     grid-area: reset;
     background-image: linear-gradient(#c42510 0%, #f02f0d 100%);
 }
-#dec{
+
+#dec {
     grid-area: dec;
 }
-.digit{
-font-size: 8vh;
-border-radius: 5px;
 
-background-image: linear-gradient(#a38441 0%, #e9d253 100%);
-text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
-box-shadow: #a38441 #9b4ea1b3 #e9d253;
+.digit {
+    font-size: 8vh;
+    border-radius: 5px;
+
+    background-image: linear-gradient(#a38441 0%, #e9d253 100%);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
+    box-shadow: #a38441 #9b4ea1b3 #e9d253;
 }
 
-.digit:active{
-background-image: linear-gradient(#dfb763 0%, #e9d253 100%); 
+.digit:active {
+    background-image: linear-gradient(#dfb763 0%, #e9d253 100%);
 }
