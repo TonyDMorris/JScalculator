@@ -30,7 +30,7 @@ function signHandler(sign) {
         //update the screen
         document.getElementById("display").innerText = "0";
     }
-    //if the user clicks multiple diffrent signs this will simply reasign signValue to the most recent clicked
+    //if the user clicks multiple diffrent signs this will simply reasign signValue to the most recently clicked
     else {
         signValue = sign;
         document.getElementById("sign").innerText = signValue
@@ -57,6 +57,7 @@ function equals() {
 
 //this allows user to carry out repeat operations on previously calculated numbers
     inputValueOne = document.getElementById("display").innerText.split("");
+    //reset the values and the inner text of the sign div
     inputValueTwo = [];
     signValue = null;
     document.getElementById("sign").innerText = signValue
@@ -64,7 +65,7 @@ function equals() {
 
 
 }
-
+//brings the script back to its initial starting state
 function reset(){
     signValue = null;
     document.getElementById("sign").innerText = signValue
