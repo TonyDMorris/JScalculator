@@ -13,18 +13,19 @@
     height:100%;
     display: grid;
     grid-template-columns:auto auto auto auto auto;
-    grid-template-rows:15vh auto auto auto auto;
+    grid-template-rows:13vh auto auto auto auto;
     grid-template-areas:"display display display display sign"
-    "seven eight nine divide equals"
-    "four five six multi equals"
+    "seven eight nine divide ."
+    "four five six multi ."
     "one two three minus equals"
     "nought dec reset plus equals";
     grid-row-gap: 2%;
     grid-column-gap: 1%;
     /* styling */
     border:solid 2px black;
-    padding: 2%;
-   
+    padding: 3%;
+    background-image: linear-gradient(#f0eae0 0%, #ccbfa2 100%);
+    border-radius: 5px;
     
 
 }
@@ -34,21 +35,15 @@
     font-size: 10vh;
     text-align: right;
     padding:10px;
-                
+    background-image: linear-gradient(#4f8f05 0%, #395c0c 100%);            
     border: solid 2px #9b4ea1b3;
-    box-shadow: 
-    inset 0 2px 0 rgba(0,0,0,.2), 
-    0 0 4px rgba(0,0,0,0.1);
-    border-radius: 1%;
+    border-radius: 10px;
 
     
 }
 #sign{
     grid-area: sign;
-    border:solid 2px;
-    box-shadow: 
-    inset 0 2px 0 rgba(0,0,0,.2), 
-    0 0 4px rgba(0,0,0,0.1);
+   
     
     text-align: center;
     font-size: 10vh;
@@ -97,28 +92,25 @@
 }
 #equals{
     grid-area: equals;
+    background-image: linear-gradient(#13b913 0%, #11ca11 100%);
 }
 #reset{
     grid-area: reset;
+    background-image: linear-gradient(#c42510 0%, #f02f0d 100%);
 }
 #dec{
     grid-area: dec;
 }
 .digit{
-    background-color: #2f194b;
-    font-size:8vh;
-    text-shadow: -1px -1px 1px rgb(43, 27, 27), 1px 1px 1px rgb(129, 46, 46);
-	color: #b48043;
-    opacity: 0.3;
-    
-    box-shadow: 0 0 0 1px rgb(172, 65, 175) inset,
-                0 0 0 2px rgba(255,255,255,0.15) inset,
-                0 8px 0 0 #9b4ea1b3,
-                0 8px 0 1px rgba(0,0,0,.4),
-                0 8px 8px 1px rgba(0,0,0,0.5);
+font-size: 8vh;
+border-radius: 5px;
+
+background-image: linear-gradient(#a38441 0%, #e9d253 100%);
+text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
+box-shadow: #a38441 #9b4ea1b3 #e9d253;
 }
+
 .digit:active{
-    box-shadow: 0 0 0 1px rgb(197, 79, 191) inset,
-                0 0 0 2px rgba(255,255,255,0.15) inset,
-                0 0 0 1px rgba(0,0,0,0.4);
+background-image: linear-gradient(#dfb763 0%, #e9d253 100%); 
 }
