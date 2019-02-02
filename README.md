@@ -1,6 +1,6 @@
-# Project Title
+# JScalculator
 
-first attempt at a js calculator using raw css, html and javascript, without a tutorial.
+First attempt at a js calculator using raw css, html and javascript, without a tutorial.
 
 ## License
 
