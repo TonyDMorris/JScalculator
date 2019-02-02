@@ -1,27 +1,21 @@
-#container {
 
-    width: 100vw;
-    height: 100vh;
-    max-width: 100%;
-    max-height: 100%;
-}
 
 
 #calculator {
     /* prescence plus layout */
-    width: 100%;
-    height: 100%;
+    
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: 13vh auto auto auto auto;
+     grid-template-columns: 17vw 17vw 17vw 17vw 17vw;
+    grid-template-rows: 15vh 18vh 18vh 18vh 18vh;
     grid-template-areas: "display display display display sign"
         "seven eight nine divide ."
         "four five six multi ."
         "one two three minus equals"
         "nought dec reset plus equals";
-    grid-row-gap: 2%;
-    grid-column-gap: 1%;
+    grid-row-gap: 1vw;
+    grid-column-gap: 0.5vw;
     /* styling */
+    text-overflow:hidden;
     border: solid 2px black;
     padding: 3%;
     background-image: linear-gradient(#f0eae0 0%, #ccbfa2 100%);
@@ -39,16 +33,24 @@
     border: solid 2px #9b4ea1b3;
     border-radius: 10px;
     font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 4px black;
+   
+    overflow:hidden;
+    max-width:80vw;
 
 
 }
 
 #sign {
     grid-area: sign;
-
-
     text-align: center;
     font-size: 10vh;
+    border: solid 3px #800000;
+  background-image: linear-gradient(#ff3333 0%, #800000 100%);
+  box-shadow: inset 3px 5px 4px #800000 ;
+  border-radius: 10px;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 0 0 4px black;
 }
 
 #one {
@@ -123,7 +125,7 @@
 
 .digit {
     font-size: 8vh;
-    border-radius: 5px;
+    border-radius: 10px;
 
     background-image: linear-gradient(#a38441 0%, #e9d253 100%);
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
