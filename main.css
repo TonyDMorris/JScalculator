@@ -25,6 +25,8 @@
 }
 
 #display {
+    
+    line-height: 140%;
     grid-area: display;
     font-size: 10vh;
     text-align: right;
@@ -34,7 +36,7 @@
     border-radius: 10px;
     font-family: 'Orbitron', sans-serif;
     text-shadow: 0 0 4px black;
-   
+    box-shadow: inset 3px 5px 4px  #395c0c;
     overflow:hidden;
     max-width:80vw;
 
@@ -42,12 +44,13 @@
 }
 
 #sign {
+    line-height: 140%;
     grid-area: sign;
     text-align: center;
     font-size: 10vh;
     border: solid 3px #800000;
   background-image: linear-gradient(#ff3333 0%, #800000 100%);
-  box-shadow: inset 3px 5px 4px #800000 ;
+  box-shadow: inset 3px 5px 4px #b92626 ;
   border-radius: 10px;
   font-family: 'Orbitron', sans-serif;
   text-shadow: 0 0 4px black;
