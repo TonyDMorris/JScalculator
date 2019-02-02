@@ -1,11 +1,8 @@
-
-
-
 #calculator {
     /* prescence plus layout */
-    
+
     display: grid;
-     grid-template-columns: 17vw 17vw 17vw 17vw 17vw;
+    grid-template-columns: 17vw 17vw 17vw 17vw 17vw;
     grid-template-rows: 15vh 18vh 18vh 18vh 18vh;
     grid-template-areas: "display display display display sign"
         "seven eight nine divide ."
@@ -15,17 +12,41 @@
     grid-row-gap: 1vw;
     grid-column-gap: 0.5vw;
     /* styling */
-    text-overflow:hidden;
+    text-overflow: hidden;
     border: solid 2px black;
     padding: 3%;
     background-image: linear-gradient(#f0eae0 0%, #ccbfa2 100%);
-    border-radius: 5px;
+    border-radius: 10px;
 
 
 }
 
+@media only screen and (min-width: 600px) {
+    #container {
+        display: grid;
+        grid-template-columns: 25wv 50vw 25vw;
+        grid-template-rows: 10vh 85vh 5vh;
+        grid-template-areas: ". . ."
+            ". calculator ."
+            ". . .";
+
+
+    }
+
+    #calculator {
+        grid-area: calculator;
+        display: grid;
+        grid-template-columns: 18.5% 18.5% 18.5% 18.5% 18.5%;
+        grid-template-rows: 18.5% 18.5% 18.5% 18.5% 18.5%;
+
+        
+        max-width: 50vw;
+    }
+}
+
+
 #display {
-    
+
     line-height: 140%;
     grid-area: display;
     font-size: 10vh;
@@ -36,9 +57,10 @@
     border-radius: 10px;
     font-family: 'Orbitron', sans-serif;
     text-shadow: 0 0 4px black;
-    box-shadow: inset 3px 5px 4px  #395c0c;
-    overflow:hidden;
-    max-width:80vw;
+    box-shadow: inset 3px 5px 4px #395c0c;
+
+    overflow: hidden;
+    max-width: 80vw;
 
 
 }
@@ -49,11 +71,11 @@
     text-align: center;
     font-size: 10vh;
     border: solid 3px #800000;
-  background-image: linear-gradient(#ff3333 0%, #800000 100%);
-  box-shadow: inset 3px 5px 4px #b92626 ;
-  border-radius: 10px;
-  font-family: 'Orbitron', sans-serif;
-  text-shadow: 0 0 4px black;
+    background-image: linear-gradient(#ff3333 0%, #800000 100%);
+    box-shadow: inset 3px 5px 4px #b92626;
+    border-radius: 10px;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 4px black;
 }
 
 #one {
@@ -129,11 +151,11 @@
 .digit {
     font-size: 8vh;
     border-radius: 10px;
-
     background-image: linear-gradient(#a38441 0%, #e9d253 100%);
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
     box-shadow: #a38441 #9b4ea1b3 #e9d253;
+
 }
 
 .digit:active {
