@@ -22,6 +22,11 @@
 
 
 }
+#supercalc{
+    display: none;
+    
+    
+}
 
 @media only screen and (min-width: 700px) {
     #container {
@@ -46,10 +51,26 @@
         box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
         
     }
+    #supercalc{
+        display: initial;
+        position: absolute;
+        font-size: 100px;
+        z-index: 1;
+        
+        transform: rotate(-45deg) translate(-100px, -150px);
+        font-family: 'Yesteryear', cursive;
+        text-shadow: 0px 3px 0px #b2a98f,
+        0px 14px 10px rgba(0,0,0,0.15),
+        0px 24px 2px rgba(0,0,0,0.1),
+        0px 34px 30px rgba(0,0,0,0.1); 
+        
+        
+    }
 }
 
 
 #display {
+    z-index: 0;
 
     line-height: 140%;
     grid-area: display;
