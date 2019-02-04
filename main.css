@@ -8,7 +8,7 @@
         "seven eight nine divide ."
         "four five six multi ."
         "one two three minus equals"
-        "nought dec reset plus equals";
+        "dec nought reset plus equals";
     grid-row-gap: 1vw;
     grid-column-gap: 0.5vw;
     /* styling */
