@@ -18,6 +18,7 @@
     background-image: linear-gradient(#f0eae0 0%, #ccbfa2 100%);
     border-radius: 10px;
     
+    
 
 
 }
@@ -30,6 +31,7 @@
         grid-template-areas: ". . ."
             ". calculator ."
             ". . .";
+            background-image:linear-gradient(#ffffcc 0%, #f7f7c3 100%)
             
 
 
@@ -41,7 +43,7 @@
         grid-template-columns: 9.25vw 9.25vw 9.25vw 9.25vw 9.25vw;
         grid-template-rows: 14vh 14vh 14vh 14vh 14vh;
         max-width: 50vw;
-        
+        box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
         
     }
 }
