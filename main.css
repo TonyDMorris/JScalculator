@@ -3,7 +3,7 @@
 
     display: grid;
     grid-template-columns: 17vw 17vw 17vw 17vw 17vw;
-    grid-template-rows: 15vh 18vh 18vh 18vh 18vh;
+    grid-template-rows: 15vh 17vh 17vh 17vh 17vh;
     grid-template-areas: "display display display display sign"
         "seven eight nine divide ."
         "four five six multi ."
@@ -17,18 +17,20 @@
     padding: 3%;
     background-image: linear-gradient(#f0eae0 0%, #ccbfa2 100%);
     border-radius: 10px;
+    
 
 
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
     #container {
         display: grid;
-        grid-template-columns: 25wv 50vw 25vw;
+        grid-template-columns: 30wv 50vw 30vw;
         grid-template-rows: 10vh 85vh 5vh;
         grid-template-areas: ". . ."
             ". calculator ."
             ". . .";
+            
 
 
     }
@@ -36,11 +38,11 @@
     #calculator {
         grid-area: calculator;
         display: grid;
-        grid-template-columns: 18.5% 18.5% 18.5% 18.5% 18.5%;
-        grid-template-rows: 18.5% 18.5% 18.5% 18.5% 18.5%;
-
-        
+        grid-template-columns: 9.25vw 9.25vw 9.25vw 9.25vw 9.25vw;
+        grid-template-rows: 14vh 14vh 14vh 14vh 14vh;
         max-width: 50vw;
+        
+        
     }
 }
 
@@ -58,7 +60,7 @@
     font-family: 'Orbitron', sans-serif;
     text-shadow: 0 0 4px black;
     box-shadow: inset 3px 5px 4px #395c0c;
-
+    text-overflow: ellipsis;
     overflow: hidden;
     max-width: 80vw;
 
@@ -160,4 +162,14 @@
 
 .digit:active {
     background-image: linear-gradient(#dfb763 0%, #e9d253 100%);
+}
+
+#github{
+    width:100%;
+    height:100%;
+    
+}
+#gitimg{
+    max-height: 100%;
+    max-width:100%;
 }
