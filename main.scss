@@ -1,63 +1,46 @@
 #calculator {
   /* prescence plus layout */
-  display: -ms-grid;
+
   display: grid;
-  -ms-grid-columns: 17vw 17vw 17vw 17vw 17vw;
   grid-template-columns: 17vw 17vw 17vw 17vw 17vw;
-  -ms-grid-rows: 15vh 17vh 17vh 17vh 17vh;
   grid-template-rows: 15vh 17vh 17vh 17vh 17vh;
-  grid-template-areas: "display display display display sign" "seven eight nine divide ." "four five six multi ." "one two three minus equals" "dec nought reset plus equals";
+  grid-template-areas:
+    "display display display display sign"
+    "seven eight nine divide ."
+    "four five six multi ."
+    "one two three minus equals"
+    "dec nought reset plus equals";
   grid-row-gap: 1vw;
   grid-column-gap: 0.5vw;
   /* styling */
   text-overflow: hidden;
   border: solid 2px black;
   padding: 3%;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#f0eae0),
-    to(#ccbfa2)
-  );
   background-image: linear-gradient(#f0eae0 0%, #ccbfa2 100%);
   border-radius: 10px;
 }
-
 #supercalc {
   display: none;
 }
 
 @media only screen and (min-width: 700px) {
   #container {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 30wv 50vw 30vw;
     grid-template-columns: 30wv 50vw 30vw;
-    -ms-grid-rows: 10vh 85vh 5vh;
     grid-template-rows: 10vh 85vh 5vh;
-    grid-template-areas: ". . ." ". calculator ." ". . .";
-    background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(#ffffcc),
-      to(#f7f7c3)
-    );
+    grid-template-areas:
+      ". . ."
+      ". calculator ."
+      ". . .";
     background-image: linear-gradient(#ffffcc 0%, #f7f7c3 100%);
   }
+
   #calculator {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
     grid-area: calculator;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 9.25vw 9.25vw 9.25vw 9.25vw 9.25vw;
     grid-template-columns: 9.25vw 9.25vw 9.25vw 9.25vw 9.25vw;
-    -ms-grid-rows: 14vh 14vh 14vh 14vh 14vh;
     grid-template-rows: 14vh 14vh 14vh 14vh 14vh;
     max-width: 50vw;
-    -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   }
   #supercalc {
@@ -65,7 +48,7 @@
     position: absolute;
     font-size: 100px;
     z-index: 1;
-    -webkit-transform: rotate(-45deg) translate(-100px, -150px);
+
     transform: rotate(-45deg) translate(-100px, -150px);
     font-family: "Yesteryear", cursive;
     text-shadow: 0px 3px 0px #b2a98f, 0px 14px 10px rgba(0, 0, 0, 0.15),
@@ -75,27 +58,17 @@
 
 #display {
   z-index: 0;
+
   line-height: 140%;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
   grid-area: display;
   font-size: 10vh;
   text-align: right;
   padding: 10px;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#4f8f05),
-    to(#395c0c)
-  );
   background-image: linear-gradient(#4f8f05 0%, #395c0c 100%);
   border: solid 2px #9b4ea1b3;
   border-radius: 10px;
   font-family: "Orbitron", sans-serif;
   text-shadow: 0 0 4px black;
-  -webkit-box-shadow: inset 3px 5px 4px #395c0c;
   box-shadow: inset 3px 5px 4px #395c0c;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -104,21 +77,11 @@
 
 #sign {
   line-height: 140%;
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
   grid-area: sign;
   text-align: center;
   font-size: 10vh;
   border: solid 3px #800000;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#ff3333),
-    to(#800000)
-  );
   background-image: linear-gradient(#ff3333 0%, #800000 100%);
-  -webkit-box-shadow: inset 3px 5px 4px #b92626;
   box-shadow: inset 3px 5px 4px #b92626;
   border-radius: 10px;
   font-family: "Orbitron", sans-serif;
@@ -126,168 +89,94 @@
 }
 
 #one {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
   grid-area: one;
 }
 
 #two {
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
   grid-area: two;
 }
 
 #three {
-  -ms-grid-row: 4;
-  -ms-grid-column: 3;
   grid-area: three;
 }
 
 #four {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
   grid-area: four;
 }
 
 #five {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
   grid-area: five;
 }
 
 #six {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
   grid-area: six;
 }
 
 #seven {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: seven;
 }
 
 #eight {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: eight;
 }
 
 #nine {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
   grid-area: nine;
 }
 
 #nought {
-  -ms-grid-row: 5;
-  -ms-grid-column: 2;
   grid-area: nought;
 }
 
 #plus {
-  -ms-grid-row: 5;
-  -ms-grid-column: 4;
   grid-area: plus;
 }
 
 #minus {
-  -ms-grid-row: 4;
-  -ms-grid-column: 4;
   grid-area: minus;
 }
 
 #divide {
-  -ms-grid-row: 2;
-  -ms-grid-column: 4;
   grid-area: divide;
 }
 
 #multi {
-  -ms-grid-row: 3;
-  -ms-grid-column: 4;
   grid-area: multi;
 }
 
 #equals {
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 5;
   grid-area: equals;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#13b913),
-    to(#11ca11)
-  );
   background-image: linear-gradient(#13b913 0%, #11ca11 100%);
 }
 
 #reset {
-  -ms-grid-row: 5;
-  -ms-grid-column: 3;
   grid-area: reset;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#c42510),
-    to(#f02f0d)
-  );
   background-image: linear-gradient(#c42510 0%, #f02f0d 100%);
 }
 
 #dec {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
   grid-area: dec;
 }
 
 .digit {
   font-size: 8vh;
   border-radius: 10px;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#a38441),
-    to(#e9d253)
-  );
   background-image: linear-gradient(#a38441 0%, #e9d253 100%);
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
-  -webkit-box-shadow: #a38441 #9b4ea1b3 #e9d253;
   box-shadow: #a38441 #9b4ea1b3 #e9d253;
 }
 
 .digit:active {
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#dfb763),
-    to(#e9d253)
-  );
   background-image: linear-gradient(#dfb763 0%, #e9d253 100%);
 }
 
 #github {
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#282d31),
-    to(#333b41)
-  );
   background-image: linear-gradient(#282d31 0%, #333b41 100%);
 }
-
 #gitimg {
   max-height: 100%;
   max-width: 100%;
 }
-/*# sourceMappingURL=main.css.map */
